@@ -11,7 +11,7 @@ metadata:
 spec:
   externalAccess:
     enabled: true
-  instances: 0
+  instances: 2
   keycloakDeploymentSpec:
     imagePullPolicy: Always
   postgresDeploymentSpec:
