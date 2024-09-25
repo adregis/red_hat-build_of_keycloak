@@ -6,7 +6,7 @@ metadata:
   name: keycloak-development
   namespace: keycloak
 spec:
-  instances: 0
+  instances: 2
   db:
     vendor: postgres
     host: postgres-db
