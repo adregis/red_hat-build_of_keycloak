@@ -1,0 +1,18 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: rhsso
+  namespace: rhsso-dev
+  labels:
+    app: keycloak
+spec:
+  to:
+    kind: Service
+    name: keycloak
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+    destinationCACertificate: ''
+  path: /
+  port:
+    targetPort: keycloak
